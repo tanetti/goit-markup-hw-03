@@ -1,0 +1,206 @@
+:root {
+  --main-backround-color: #fff;
+  --secondary-backround-color: #f5f4fa;
+  --hero-footer-backround-color: #2f303a;
+
+  --header-text-color: #212121;
+  --main-text-color: #757575;
+  --hero-text-color: #fff;
+
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: var(--main-backround-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* Заглушки */
+.list {
+  list-style: none;
+}
+
+.link-decor {
+  text-decoration: none;
+}
+
+/* Ссылки */
+.logo-link {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header-link {
+  color: #000;
+}
+
+.footer-link {
+  color: #fff;
+}
+
+.nav-link {
+  color: var(--header-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact-header-link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-style: normal; /* Необходимо для снятия italic от тега address */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact-footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal; /* Необходимо для снятия italic от тега address */
+  line-height: 1.71;
+}
+
+.geo-link {
+  color: #fff;
+  font-style: normal; /* Необходимо для снятия italic от тега address */
+  line-height: 1.71;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-header-link:hover,
+.contact-header-link:focus,
+.contact-footer-link:hover,
+.contact-footer-link:focus,
+.geo-link:hover,
+.geo-link:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--hero-footer-backround-color);
+}
+
+.hero-title {
+  color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--hero-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-text-color);
+  color: var(--accent-color);
+}
+
+/* Особенности */
+.hiden-header {
+  /* Убрать видимость семантического заголовка */
+}
+
+.features-header {
+  color: var(--header-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  line-height: 1.71;
+}
+
+/* Общий хедер */
+.header {
+  color: var(--header-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Команда */
+.team {
+  background-color: var(--secondary-backround-color);
+}
+
+.team-card {
+  background-color: #fff;
+}
+
+.team-name {
+  color: var(--header-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Галерея */
+.gallery-button {
+  color: var(--header-text-color);
+  background-color: var(--secondary-backround-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gallery-button:hover,
+.gallery-button:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.gallery-header {
+  color: var(--header-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery-type {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--hero-footer-backround-color);
+}
