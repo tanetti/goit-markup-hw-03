@@ -3,7 +3,7 @@
   --secondary-backround-color: #f5f4fa;
   --hero-footer-backround-color: #2f303a;
 
-  --header-text-color: #212121;
+  --caption-text-color: #212121;
   --main-text-color: #757575;
   --hero-text-color: #fff;
 
@@ -19,13 +19,47 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Заглушки */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Утилиты */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link-decor {
   text-decoration: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.hidden-caption {
+  /* Убрать видимость семантического заголовка */
+  text-align: center;
+}
+
+/* Общая секция */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Общий контейнер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  /* OUTLINE */
+  outline: 2px solid tomato;
 }
 
 /* Ссылки */
@@ -46,7 +80,7 @@ body {
 }
 
 .nav-link {
-  color: var(--header-text-color);
+  color: var(--caption-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -83,9 +117,18 @@ body {
   color: var(--accent-color);
 }
 
+/* Хедер */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /* Герой */
 .hero {
   background-color: var(--hero-footer-backround-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -93,55 +136,59 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero-button {
   background-color: var(--accent-color);
   color: var(--hero-text-color);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--hero-text-color);
-  color: var(--accent-color);
+  background-color: var(--secondary-backround-color);
+  color: var(--caption-text-color);
 }
 
 /* Особенности */
-.hiden-header {
-  /* Убрать видимость семантического заголовка */
-}
-
-.features-header {
-  color: var(--header-text-color);
+.features-caption {
+  color: var(--caption-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-text {
   line-height: 1.71;
 }
 
-/* Общий хедер */
-.header {
-  color: var(--header-text-color);
+/* Общий заголовок */
+.caption {
+  color: var(--caption-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Чем мы занимаемся */
+.work {
+  padding-top: 0;
 }
 
 /* Команда */
@@ -151,14 +198,20 @@ body {
 
 .team-card {
   background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
 }
 
 .team-name {
-  color: var(--header-text-color);
+  color: var(--caption-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -169,7 +222,7 @@ body {
 
 /* Галерея */
 .gallery-button {
-  color: var(--header-text-color);
+  color: var(--caption-text-color);
   background-color: var(--secondary-backround-color);
   font-family: inherit;
   font-weight: 500;
@@ -177,6 +230,9 @@ body {
   line-height: 1.63;
   text-align: center;
   cursor: pointer;
+  padding: 6px 22px;
+  border-width: 0;
+  border-radius: 4px;
 }
 
 .gallery-button:hover,
@@ -185,12 +241,20 @@ body {
   background-color: var(--accent-color);
 }
 
-.gallery-header {
-  color: var(--header-text-color);
+.gallery-caption-group {
+  padding: 20px 24px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.gallery-caption {
+  color: var(--caption-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .gallery-type {
@@ -203,4 +267,16 @@ body {
 /* Футер */
 .footer {
   background-color: var(--hero-footer-backround-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo-margin {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-link-margin {
+  display: inline-block;
+  margin-bottom: 9px;
 }
