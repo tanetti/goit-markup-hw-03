@@ -305,7 +305,7 @@ img {
 }
 
 .gallery-nav .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .gallery-button {
@@ -336,7 +336,7 @@ img {
 }
 
 .gallery-card {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
 }
 
 .gallery-card:not(:nth-child(3n)) {
