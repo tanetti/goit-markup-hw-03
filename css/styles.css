@@ -19,12 +19,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* Утилиты */
 .list {
   list-style: none;
@@ -44,6 +38,12 @@ img {
   /* Убрать видимость семантического заголовка */
   display: none;
   text-align: center;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Общая секция */
@@ -268,7 +268,6 @@ img {
 }
 
 .team-card {
-  padding-bottom: 30px;
   width: 270px;
 
   background-color: #fff;
@@ -281,8 +280,9 @@ img {
   margin-right: 30px;
 }
 
-.team-photo {
-  margin-bottom: 30px;
+.team-caption-group {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
